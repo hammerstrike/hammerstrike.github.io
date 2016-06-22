@@ -147,3 +147,11 @@ html.sl-opening .sl-offcanvas {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
 }
+
+@media (min-width: 550px){
+html.sl-opening .sl-page {
+    -webkit-transform: translate3d(440px,0,0);
+    transform: translate3d(440px,0,0);
+}
+    
+}
