@@ -13,7 +13,9 @@ height: 100%;
 .starter-template {
     color: #fff;
 }
-
+.container-fluid.nopadding{
+    padding:0;
+}
 #hamburger {
     box-sizing: border-box;
     display: block;
