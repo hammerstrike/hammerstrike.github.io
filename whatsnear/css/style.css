@@ -16,6 +16,10 @@ height: 100%;
 .container-fluid.nopadding{
     padding:0;
 }
+.site-title{
+    font-family:'Roboto';
+}
+.site-title b{font-weight:700;}
 #hamburger {
     box-sizing: border-box;
     display: block;
