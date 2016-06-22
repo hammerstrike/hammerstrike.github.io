@@ -1,35 +1,49 @@
 <html lang="en">
 
 <head>
-	<title>Google Map</title>
+    <title>WhatsNearYou</title>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-	<style>
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
-	</style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
 </head>
 
-<body>		
-    <div id="map"></div>
+<body>
+    <div class="sl-offcanvas" id="sl-offcanvas">
+        <ul>
+            <li><a>Restourants</a></li>
+        </ul>
+    </div>
     
-    <!-- JS -->
+    <!-- PAGE: Every thing inside this -->
+    <div class="sl-page" id="sl-page">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">                    
+                   <a id="hamburger" class="mm-slideout" href="#"><span></span></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="starter-template">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvdy1dIRe1SPSCCXW-yAkpU-_56ROouhg&libraries=places" ></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <script type="text/javascript" src="mapapp.js"></script>
-    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slpanels.js"></script>
+    <script type="text/javascript" src="js/mappapp.js"></script>
 </body>
 
 </html>

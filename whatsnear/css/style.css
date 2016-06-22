@@ -1,0 +1,147 @@
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+#map {
+height: 100%;
+}
+.page {
+    padding: 40px 0 0;
+}
+
+.starter-template {
+    color: #fff;
+}
+
+#hamburger {
+    box-sizing: border-box;
+    display: block;
+    width: 70px;
+    height: 25px;
+    position: fixed;
+    top: 14px;
+    left: 10px;
+    z-index: 2;
+}
+
+#hamburger:before,
+#hamburger:after,
+#hamburger span {
+    background: #fff;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    left: 20px;
+}
+
+#hamburger:before {
+    top: 0px;
+}
+
+#hamburger span {
+    top: 10px;
+}
+
+#hamburger:after {
+    top: 20px;
+}
+
+#hamburger,
+#hamburger:before,
+#hamburger:after,
+#hamburger span {
+    -webkit-transition: none 0.5s ease .2s;
+    transition: none 0.5s ease .2s;
+    -webkit-transition-property: transform, top, bottom, left, opacity;
+    transition-property: transform, top, bottom, left, opacity;
+}
+
+
+/* Animate Icon */
+
+html.sl-opening {
+    overflow: hidden;
+}
+
+html.sl-opening #hamburger {
+    transform: rotate(180deg);
+}
+
+html.sl-opening #hamburger span {
+    opacity: 0;
+}
+
+html.sl-opening #hamburger:before,
+html.sl-opening #hamburger:after {
+    top: 10px;
+}
+
+html.sl-opening #hamburger:before {
+    transform: rotate( 45deg);
+    -webkit-transform: rotate( 45deg);
+    -moz-transform: rotate( 45deg);
+    -ms-transform: rotate( 45deg);
+    -o-transform: rotate( 45deg);
+}
+
+html.sl-opening #hamburger:after {
+    transform: rotate( -45deg);
+    -webkit-transform: rotate( -45deg);
+    -moz-transform: rotate( -45deg);
+    -ms-transform: rotate( -45deg);
+    -o-transform: rotate( -45deg);
+}
+
+
+/* Sliding Magic */
+
+#sl-page {
+    box-shadow: none;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100%;
+    padding: 40px 0 0;
+    overflow: hidden;
+    position: relative;
+    background: #4BB5EF;
+}
+
+#sl-offcanvas {
+    min-height: 100%;
+    background: #eee;
+}
+
+.sl-offcanvas,
+.sl-page {
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease;
+}
+
+.sl-page {}
+
+.sl-offcanvas {
+    z-index: 0;
+    position: fixed;
+    width: 80%;
+    min-width: 140px;
+    max-width: 440px;
+    background: #fff;
+    border-color: rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, .6);
+    transform: translate(-30%, 0);
+}
+
+html.sl-opening .sl-page {
+    -webkit-transform: translate(80%, 0);
+    transform: translate(80%, 0);
+}
+
+html.sl-opening .sl-offcanvas {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
