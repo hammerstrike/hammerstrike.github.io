@@ -21,7 +21,8 @@ height: 100%;
     font-size: 25px;
     color: #aaa;
     font-weight: 100;
-    padding: 4px 0 0;
+    padding: 8px 0 0;
+    margin: 0;
 }
 .site-title b{font-weight:700;}
 #hamburger {
