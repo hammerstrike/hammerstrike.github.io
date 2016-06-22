@@ -32,7 +32,9 @@ ul.places {
     list-style: none;
         padding: 0;
 }
-ul.places li { width:100%; height: 30px;  margin: 0 0 7px 0; }
+ul.places li { width: 100%;
+    margin: 0 0;
+    border-bottom: 1px solid #eee;}
 ul.places li a { 
     display: block;
     width: 300px;
