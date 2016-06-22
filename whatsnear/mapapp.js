@@ -30,7 +30,7 @@ $(document).ready(function () {
 
 		map = new google.maps.Map(mapBlock, {
 			center: latlng,
-			zoom: 20
+			zoom: 15
 		});
 
 		infowindow = new google.maps.InfoWindow();
