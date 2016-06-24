@@ -26,6 +26,7 @@ $(document).ready(function () {
 	
 	$(window).on('hashchange', function() {
   		hash = location.hash;
+  		console.log(myLocation);
 		embedMap(myLocation);
 	});
 	
