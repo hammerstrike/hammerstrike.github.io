@@ -24,10 +24,12 @@ $(document).ready(function () {
 		mapBlock.text('Your browser is out of fashion, there\'s no geolocation!');
 	};
 	
-	$(window).hashchange( function(){
-		hash = location.hash;
+	$(window).on('hashchange', function() {
+  		hash = location.hash;
 		embedMap(latlng);
 	});
+	
+
 	
 	//Embed map
 	function embedMap(latlng) {
