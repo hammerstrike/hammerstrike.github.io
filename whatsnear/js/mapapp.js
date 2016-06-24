@@ -25,7 +25,7 @@ $(document).ready(function () {
 	};
 	
 	$(window).on('hashchange', function() {
-  		hash = (location.hash).substring(url.indexOf("#")+1);
+  		hash = url.substring(url.indexOf("#")+1);
   		console.log(hash);
 		embedMap(myLocation);
 		 $('#hamburger').trigger('click');
