@@ -28,6 +28,7 @@ $(document).ready(function () {
   		hash = location.hash;
   		console.log(hash);
 		embedMap(myLocation);
+		 $('#hamburger').trigger('click');
 	});
 	
 
