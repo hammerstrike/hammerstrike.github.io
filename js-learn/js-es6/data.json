@@ -1,0 +1,54 @@
+{
+    "caracters" : [
+        {
+            "id" : "01",
+            "name" :"Hiccup",
+            "movie" : "How to train your dragon"
+        }, 
+        {
+            "id" : "02",
+            "name" :"Astrid",
+            "movie" : "How to train your dragon"
+        },
+        {
+            "id" : "03",
+            "name" :"Monolo",
+            "movie" : "The Book of Life"
+        },
+        {
+            "id" : "04",
+            "name" :"Maria",
+            "movie" : "The Book of Life"
+        },
+        {
+            "id" : "05",
+            "name" :"Cloudy",
+            "movie" : "Cloudy with a chance of meatballs"
+        },
+        {
+            "id" : "06",
+            "name" :"Shermen",
+            "movie" : "Mr. Peabody and Shermen"
+        },
+        {
+            "id" : "07",
+            "name" :"Norman",
+            "movie" : "Paranorman"
+        },
+        {
+            "id" : "08",
+            "name" :"Hiro",
+            "movie" : "The big hero 6"
+        },
+        {
+            "id" : "09",
+            "name" :"Anna",
+            "movie" : "Frozen"
+        },
+        {
+            "id" : "10",
+            "name" :"Elsa",
+            "movie" : "Frozen"
+        }
+    ]
+}
