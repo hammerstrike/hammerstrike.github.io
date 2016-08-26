@@ -195,7 +195,7 @@ Promise.all([myPromise,myPromise2]).then((data) => {
 });
 
 
-//usong fetch
+//usong fetch : fetch is browser api
 fetch('data.json').then((res)=>{
     res.json().then((data)=>{
         console.log(data);
