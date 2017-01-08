@@ -42,6 +42,20 @@
     .speciality-icon.ng{
         width: 50px;
     }
+    .post-content ul{
+        padding: 0;
+        list-style-type: none;
+    }
+    .post-content ul li{
+        position: relative;
+        padding-left: 10px;
+    }
+    .post-content ul li:before{
+        content: "-";
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 </style>
 </head>
 
@@ -56,7 +70,7 @@
 
     <!-- Photo -->
     <div class="photo">
-        <img src="assets/img/photos/it-avatar.jpg" alt="Amardeep Kamble">
+        <img src="assets/img/photos/me2.jpg" alt="Amardeep Kamble">
     </div>
 
     <!-- Navigation -->
@@ -97,7 +111,7 @@
         -->
         <!-- Middle -->
         <div class="container container-wide v-bottom padding-v-80">
-            <h1 class="text-lg margin-b-0">Hi! I’m <strong>Amardeep Kamble</strong></h1>
+            <h1 class="text-lg margin-b-0">Hi, I'm <strong>Amardeep Kamble</strong></h1>
             <h5 class="text-tertiary margin-b-40">an experienced UI Developer</h5>
             <span data-target="local-scroll"><a href="#resume" class="btn btn-lg btn-primary animated" data-animation="bounceIn"><span>Go to my resume!</span><i class="ti-arrow-down"></i></a></span>
             <a href="assets/Amardeep Kamble [UI Developer, 4 years, JustDial Ltd.].docx" class="btn btn-link"><span>Download my CV</span><i class="ti-file"></i></a>
@@ -222,7 +236,7 @@
                             <span class="speciality-icon"><i class="text-muted-2x ti-desktop"></i></span>
                             <div class="speciality-content">
                                 <h5 class="margin-b-0">Developing the UI</h5>
-                                <p class="speciaity-description">HTML5, CSS3, JavaScript ($), tableless web layout</p>
+                                <p class="speciaity-description">HTML5, CSS3, JavaScript, $, tableless web layout</p>
                             </div>
                         </div>
                         <!-- Speciality -->
@@ -245,8 +259,8 @@
                         <div class="speciality">
                             <span class="speciality-icon ng"><img src="assets/img/angularjs-grey.png"/></span>
                             <div class="speciality-content">
-                                <h5 class="margin-b-0">AngularJs 1</h5>
-                                <p class="speciaity-description">WebApps using AngularJs 1</p>
+                                <h5 class="margin-b-0">AngularJs 1.x</h5>
+                                <p class="speciaity-description">WebApps using AngularJs 1.x</p>
                             </div>
                         </div>
                         
@@ -287,92 +301,174 @@
     </section>
     <!-- Section - Resume / End -->
     
-    <!-- Section - Work -->
-    <section id="work" class="section bg-grey padding-v-60">
+    <!-- Section - Work Posts -->
+    <section id="work" class="section bg-secondary dark padding-v-60">
+
         <!-- Content -->
         <div class="container container-wide">
 
             <h5 class="margin-b-50 text-info">My Work</h5>
             
-            <div id="portfolio-list" class="row masonry">
+            <div class="row masonry">
                 <!-- Masonry Sizer -->
-                <div class="masonry-sizer col-lg-3 col-sm-6 col-xs-12"></div>    
+                <div class="masonry-sizer col-lg-4 col-sm-6 col-xs-12"></div>    
+                <!-- Masonry Element / Post -->
+                <article class="post post-item masonry-item col-lg-4 col-sm-6 col-xs-12">
+                    <div class="post-photo">
+                        <img src="assets/img/projects/jd_entertainment.png" alt="Justdial Entertainment">
+                    </div>
+                    <div class="post-content animated" data-animation="fadeInUp">
+                        
+                        
+                        <h4><a href="http://www.justdial.com/entertainment/" target="_blank">Justdial Entertainment</a></h4>
+                        <ul>
+                            <li>Bootstrap</li>
+                            <li>jQuery</li>                           
+                        </ul>
+                        <a href="http://www.justdial.com/entertainment/" target="_blank" class="btn btn-primary btn-xs"><span>Visit</span><i class="ti-arrow-right"></i></a>
+                    </div>
+                </article>
 
-                <!-- Masonry Element -->
-                <div class="webdesign masonry-item margin-b-30 col-lg-3 col-sm-12 col-xs-12">
-                    <div class="gallery-item">
-                        <div class="item-photo text-center">
-                            <a href="projects/project-example-it.html" data-target="ajax-modal"><img  class="responsive-img"  src="https://images.jdmagicbox.com/entertainment/images/JD_Logo_2x.png" alt="" /></a>
-                            <div class="item-hover bg-dark dark">
-                                <div class="item-hover-content">
-                                    <a href="#" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-title">
-                            <a href="www.justdial.com/entertainment/" class="title">JustDial Entertainment</a>                            
-                        </div>
+                <article class="post post-item masonry-item col-lg-4 col-sm-6 col-xs-12">
+                    <div class="post-photo">
+                        <img src="assets/img/projects/jd_omni.png" alt="JD Omni Mobile Site">
                     </div>
-                </div>
-                <!-- Masonry Element -->
-                <div class="development masonry-item margin-b-30 col-lg-3 col-sm-6 col-xs-12">
-                    <div class="gallery-item">
-                        <div class="item-photo text-center">
-                            <a href="projects/project-example-it.html" data-target="ajax-modal"><img  class="responsive-img"  src="http://www.jdomni.com/marketplace/static/images/logo-blue.svg" alt="" /></a>
-                            <div class="item-hover bg-dark dark">
-                                <div class="item-hover-content">
-                                    <a href="#" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"></i></a>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-title">
-                            <a href="#" class="title">JD Omni Mobile Site</a>                            
-                        </div>
+                    <div class="post-content animated" data-animation="fadeInUp">
+                        
+                        
+                        <h4><a href="" target="_blank">JD Omni</a></h4>
+                        <ul>
+                            <li>Mobile Site</li>                           
+                            <li>jQuery</li>                           
+                            <li>Javascript Module for Android Webview</li>                           
+                        </ul>
+                        <a href="" target="_blank" class="btn btn-primary btn-xs"><span>Visit</span><i class="ti-arrow-right"></i></a>
                     </div>
-                </div>
-                <!-- Masonry Element -->
-                <div class="graphic masonry-item margin-b-30 col-lg-3 col-sm-6 col-xs-12">
-                    <div class="gallery-item">
-                        <div class="item-photo text-center">
-                            <a href="projects/project-example-it.html" data-target="ajax-modal"><img class="responsive-img" src="http://mumbaidreamhomes.com/images/logo-banner.png" alt="" /></a>
-                            <div class="item-hover bg-dark dark">
-                                <div class="item-hover-content">
-                                    <a href="#" data-target="ajax-modal" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-title">
-                            <a href="#" class="title">Mumbai Dream Homes</a>
-                        </div>
-                    </div>
-                </div>
+                </article>
 
-                 <!-- Masonry Element -->
-                <div class="graphic masonry-item margin-b-30 col-lg-3 col-sm-6 col-xs-12">
-                    <div class="gallery-item">
-                        <div class="item-photo text-center">
-                            <a href="http://www.scapes.co.in/" data-target="ajax-modal"><img class="responsive-img" src="http://www.scapes.co.in/images/logo.png" alt="" /></a>
-                            <div class="item-hover bg-dark dark">
-                                <div class="item-hover-content">
-                                    <a href="http://www.scapes.co.in/" data-target="ajax-modal" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-title">
-                            <a href="#" class="title">www.scapes.co.in</a>
-                            <span class="caption text-muted">Custom jQuery image Slider , Landing page design solution</span>
-                        </div>
+                <article class="post post-item masonry-item col-lg-4 col-sm-6 col-xs-12">
+                    <div class="post-photo">
+                        <img src="assets/img/projects/mumbai-dream-homes.png" alt="Mumbai Dream Homes">
                     </div>
-                </div>
-               
-            </div>    
+                    <div class="post-content animated" data-animation="fadeInUp">
+                        
+                        
+                        <h4><a href="http://www.mumbaidreamhomes.com" target="_blank">Mumbai Dream Homes</a></h4>
+                         <ul>                                                      
+                            <li>Bootstrap Modified Template</li>                                 
+                            <li>jQuery</li>                   
+                        </ul>
+                        <a href="http://www.mumbaidreamhomes.com" target="_blank" class="btn btn-primary btn-xs"><span>Visit</span><i class="ti-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post post-item masonry-item col-lg-4 col-sm-6 col-xs-12">
+                    <div class="post-photo">
+                        <img src="assets/img/projects/tfod.png" alt="The Future Of Design">
+                    </div>
+                    <div class="post-content animated" data-animation="fadeInUp">
+                        
+                        
+                        <h4><a href="http://www.tfod.in/" target="_blank">The Future Of Design</a></h4>
+                        <ul>
+                            <li>Logo Design</li>                            
+                            <li>jQuery</li>
+                        </ul>
+                        <a href="http://www.tfod.in/" target="_blank" class="btn btn-primary btn-xs"><span>Visit</span><i class="ti-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post post-item masonry-item col-lg-4 col-sm-6 col-xs-12">
+                    <div class="post-photo">
+                        <img src="assets/img/projects/tfod-jobs.png" alt="">
+                    </div>
+                    <div class="post-content animated" data-animation="fadeInUp">                        
+                        
+                        <h4><a href="http://www.jobs.tfod.in/" target="_blank">TFOD Jobs</a></h4>
+                        <ul>
+                            <li>GetUIKit</li>
+                            <li>Responsive</li>
+                            <li>jQuery</li>
+                        </ul>
+                        <a href="http://www.scapes.co.in/" target="_blank" class="btn btn-primary btn-xs"><span>Visit</span><i class="ti-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post post-item masonry-item col-lg-4 col-sm-6 col-xs-12">
+                    <div class="post-photo">
+                        <img src="assets/img/projects/scapes.png" alt="">
+                    </div>
+                    <div class="post-content animated" data-animation="fadeInUp">
+                        
+                        
+                        <h4><a href="http://www.scapes.co.in/" target="_blank">Scapes</a></h4>
+                        <ul>
+                            <li>Custom jQuery image Slider</li>
+                            <li>Landing page design solution</li>
+                        </ul>
+                        <a href="http://www.scapes.co.in/" target="_blank" class="btn btn-primary btn-xs"><span>Visit</span><i class="ti-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post post-item masonry-item col-lg-4 col-sm-6 col-xs-12">
+                    <div class="post-photo">
+                        <img src="assets/img/projects/nutrimeals.png" alt="Nutrimeals">
+                    </div>
+                    <div class="post-content animated" data-animation="fadeInUp">                        
+                        
+                        <h4><a href="" target="_blank">Nutrimeals</a></h4>
+                        <ul>
+                            <li>Font end + Admin Panel</li>                           
+                            <li>Bootstrap</li>
+                            <li>jQuery</li>
+                            <li>AngularJs for Admin Dashboard</li>
+                        </ul>
+                        <a href="" target="_blank" class="btn btn-primary btn-xs"><span>Visit</span><i class="ti-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post post-item masonry-item col-lg-4 col-sm-6 col-xs-12">
+
+                    
+                    <div class="post-photo">
+                        <img src="assets/img/projects/iiid.png" alt="Institute of India Interior Designers">
+                    </div>
+                    <div class="post-content animated" data-animation="fadeInUp">                        
+                        
+                        <h4><a href="http://www.iiid.net.in/" target="_blank">Institute of India Interior Designers</a></h4>
+                        <ul>
+                            <li>UI Development</li>
+                            <li>jQuery</li>
+                        </ul>
+                        <a href="http://www.iiid.net.in/" target="_blank" class="btn btn-primary btn-xs"><span>Visit</span><i class="ti-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post post-item masonry-item col-lg-4 col-sm-6 col-xs-12">
+                    <div class="post-photo">
+                        <img src="assets/img/projects/netcore.png" alt="Netcore">
+                    </div>
+                    <div class="post-content animated" data-animation="fadeInUp">                        
+                        
+                        <h4><a href="http://www.netcore.in/" target="_blank">Netcore</a></h4>
+                        <ul>
+                            <li>UI Development</li>
+                            <li>jQuery</li>
+                        </ul>
+                        <a href="http://www.netcore.in/" target="_blank" class="btn btn-primary btn-xs"><span>Visit</span><i class="ti-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>  
+
+            <h5 class="margin-b-50">You can find some of my work on GitHub <a href="https://github.com/hammerstrike" class="text-info" target="_blank">here</a></h5>
+
+
 
         </div>
         
     </section>
-    <!-- Section - Portfolio / End -->
-    
+    <!-- Section - Work / End -->
     <!-- Section - Contact -->
     <section id="contact" class="section padding-v-60 min-fullheight">
         <!-- BG Map -->
