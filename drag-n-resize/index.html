@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+	<title>Page Title</title>
+	<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+	<style>
+		html,body,
+		#container{
+			width:100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#container{
+			margin: 0 auto;
+			overflow: hidden;
+    		position: relative;
+		}
+		.dragable{
+			position: absolute;;
+			width: 200px;
+			height: auto;
+			background: #aaa;
+			font-size: 0;
+		}
+		.dragable .grab-controll{
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    height: 100%;
+		    width: 100%;
+			z-index: 2;
+		}
+		.dragable .resize-controll{
+			position: absolute;
+			background: #aaa;
+			border-radius: 4px;
+			z-index: 3;
+		}
+		.dragable .resize-controll.resize-controll-top,
+		.dragable .resize-controll.resize-controll-bottom{width: 100%;height: 2px;cursor:ns-resize;}
+
+		.dragable .resize-controll.resize-controll-left,
+		.dragable .resize-controll.resize-controll-right{height: 100%;width: 2px;cursor:e-resize;}
+
+		.dragable .resize-controll.resize-controll-top,
+		.dragable .resize-controll.resize-controll-left{top:0;left: 0;}
+
+		.dragable .resize-controll.resize-controll-right{top:0;right: 0;}
+		.dragable .resize-controll.resize-controll-bottom{bottom: 0;left: 0}
+
+
+
+
+		.dragable .drag-img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.red{background-color: #f00;}
+		.green{background-color: #0f0;}
+		.blue{background-color: #00f;}
+		.yellow{background-color: #ff0;}
+
+		.grab{
+			    cursor: -webkit-grab;
+		}
+		.grabbing{
+			    cursor: -webkit-grabbing;
+		}
+
+	</style>
+</head>
+
+<body ng-controller="MainController">
+	<div id="container">
+		<div class="message"></div>
+		<div ng-dragable class="dragable red"><img class="drag-img" src="1.jpg" alt="" title=""/></div>
+		<div ng-dragable class="dragable green"><img class="drag-img" src="2.jpg" alt="" title=""/></div>
+		<div ng-dragable class="dragable blue"><img class="drag-img" src="3.jpg" alt="" title=""/></div>
+		<div ng-dragable class="dragable yellow"><img class="drag-img" src="2.jpg" alt="" title=""/></div>
+	</div>
+
+	<!-- JS -->
+	<script src="modernizr.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
