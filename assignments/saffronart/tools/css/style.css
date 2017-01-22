@@ -398,6 +398,9 @@ a.navbar-brand{
         float: none;
         width: 100%;
     }
+    .list-container .card{
+        margin: 0 0 20px 0;
+    }
     
 }
 
