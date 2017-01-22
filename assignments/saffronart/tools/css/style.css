@@ -145,6 +145,7 @@ a.navbar-brand{
     transition: opacity 500ms;
     
 }
+.nav>li.active>a:after,
 .nav>li>a:hover:after{
     opacity: 1;
 }
