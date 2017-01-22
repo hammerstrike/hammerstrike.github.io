@@ -148,6 +148,7 @@ a.navbar-brand{
 .nav>li.active>a:after,
 .nav>li>a:hover:after{
     opacity: 1;
+    color: #000;
 }
 .navbar-toggle .icon-bar{
     background: #aaa;
