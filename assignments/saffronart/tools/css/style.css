@@ -363,6 +363,7 @@ a.navbar-brand{
     }
     .navbar-header .navbar-brand{
         color: #4e0f25;
+        
     }
     
     .navbar-toggle{
@@ -377,7 +378,7 @@ a.navbar-brand{
     }
     .navbar-collapse .navbar-nav{
         background: #efefef;
-        margin-top: 0;
+        margin: 0 0 15px;
     }
     .dropdown-menu{
         width: 100%;
