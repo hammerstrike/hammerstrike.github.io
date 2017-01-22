@@ -378,7 +378,7 @@ a.navbar-brand{
     }
     .navbar-collapse .navbar-nav{
         background: #efefef;
-        margin: 0;
+        margin: 0 0 15px;
     }
     .dropdown-menu{
         width: 100%;
