@@ -25,7 +25,7 @@
 /** Doc Ready */
 $(document).ready(function() {
     
-    $('.btn-search')
+    $('.btn-search-toggle')
         .on('click', function () {
             if(!$('.navbar-toggle').hasClass('collapsed')){
                 $('.navbar-toggle').trigger('click');
