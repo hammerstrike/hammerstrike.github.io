@@ -24,6 +24,7 @@
 
 /** Doc Ready */
 $(document).ready(function() {
+    
     $('.btn-search')
         .on('click', function () {
             if(!$('.navbar-toggle').hasClass('collapsed')){
@@ -31,6 +32,7 @@ $(document).ready(function() {
             }
             $('.searchbar-container').slideToggle(500);
         });
+    
     $('.lnk-controlbar')
         .on('click', function () {           
             $('.controlbar-controls').slideToggle(500);
