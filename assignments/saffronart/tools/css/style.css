@@ -358,6 +358,9 @@ a.navbar-brand{
     body{
         padding-top: 80px;
     }
+    .p-xs-0{
+        padding: 0;    
+    }
     .navbar-header .navbar-brand{
         color: #4e0f25;
     }
